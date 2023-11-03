@@ -1,11 +1,12 @@
 
 import './App.css';
+import { CardFruits } from './components/datas/CardFruids';
 
 function App() {
-  return (<>
-    <h1>Hello React</h1>
-    <h2>Hello</h2>
-    </>
+  return (
+
+    <CardFruits/>
+    
   )
   
 }
