@@ -2,8 +2,10 @@
 import './App.css';
 
 function App() {
-  return (
+  return (<>
     <h1>Hello React</h1>
+    <h2>Hello</h2>
+    </>
   )
   
 }
