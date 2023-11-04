@@ -1,14 +1,8 @@
-
-import './App.css';
-import { CardFruits } from './components/datas/CardFruids';
+import "./App.css";
+import { CardFruits } from "./components/components/CardFruids";
 
 function App() {
-  return (
-
-    <CardFruits/>
-    
-  )
-  
+  return <CardFruits/>;
 }
 
 export default App;
