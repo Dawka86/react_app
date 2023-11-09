@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Button, Row } from "react-bootstrap";
 import CartPic from "./CardPic";
 import { CardData } from "./CardData";
-import  apple  from "./pictures/apple.jpg";
-import  melon  from "./pictures/melon.jpg";
-import  pineapple  from "./pictures/pineapple.jpg";
-import  watermelon  from "./pictures/watermelon.jpg";
+import apple from "./pictures/apple.jpg";
+import melon from "./pictures/melon.jpg";
+import pineapple from "./pictures/pineapple.jpg";
+import watermelon from "./pictures/watermelon.jpg";
 
 export function CardFruits() {
   const [cart, setCart] = useState([]); // Stan koszyka
@@ -32,6 +32,7 @@ export function CardFruits() {
           onAddToCart={setCart}
           cart={cart}
         />
+
         <CartPic
           price={7}
           name="melon"
@@ -40,6 +41,7 @@ export function CardFruits() {
           onAddToCart={setCart}
           cart={cart}
         />
+
         <CartPic
           price={3.2}
           name="pineapple"
@@ -48,6 +50,7 @@ export function CardFruits() {
           onAddToCart={setCart}
           cart={cart}
         />
+
         <CartPic
           price={3}
           name="watermelon"
