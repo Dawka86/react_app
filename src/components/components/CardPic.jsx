@@ -66,14 +66,14 @@ export default function CartPic({ price, onAddToCart, cart, pic, name, height })
       </Button>
 
       <Modal show={showInfo} onHide={handleCloseInfo}>
-        <Modal.Header closeButton>
-          <Modal.Title>Informacja</Modal.Title>
+        <Modal.Header className="modal-header">
+          <Modal.Title>Success</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <p>Twoje zamówienie zostało dodane do koszyka.</p>
+        <Modal.Body className="modal-body">
+          <p>Your order has been added to your shopping cart.</p>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseInfo}>
+        <Modal.Footer style={{background:"green"}}>
+          <Button variant="info" onClick={handleCloseInfo}>
             Zamknij
           </Button>
         </Modal.Footer>
