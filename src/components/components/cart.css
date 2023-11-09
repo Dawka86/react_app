@@ -1,3 +1,29 @@
-.image-class{
-    
+.title{
+    background-color: rgb(169, 231, 107);
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    margin: 0%;
+    border-bottom: 1px solid black;
+}
+.title span {
+    background: linear-gradient(to right, rgb(187, 255, 0), green);
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+.deleteButton{
+    float: right;
+}
+.buttonAddToCart{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.result-paragraph{
+    background-color: rgb(132, 161, 198);
+    padding: 10px;
+    color:white;
+    border: solid black 1px;
+    border-radius: 5px;
 }

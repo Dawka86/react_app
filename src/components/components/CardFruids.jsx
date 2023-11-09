@@ -6,6 +6,8 @@ import apple from "./pictures/apple.jpg";
 import melon from "./pictures/melon.jpg";
 import pineapple from "./pictures/pineapple.jpg";
 import watermelon from "./pictures/watermelon.jpg";
+import troley from "./pictures/trolley.png";
+import "./cart.css";
 
 export function CardFruits() {
   const [cart, setCart] = useState([]); // Stan koszyka
@@ -23,20 +25,26 @@ export function CardFruits() {
 
   return (
     <>
+      <h1 className="title">
+        Say <span>YES</span> to fruit <img src={troley} alt="troley"/>
+         ...
+      </h1>
       <Row style={{ width: "100%" }}>
         <CartPic
           price={4}
-          name="apple"
+          name="Apple"
           width="200px"
           pic={apple}
+          height="320px"
           onAddToCart={setCart}
           cart={cart}
         />
 
         <CartPic
           price={7}
-          name="melon"
+          name="Melon"
           width="200px"
+          height="320px"
           pic={melon}
           onAddToCart={setCart}
           cart={cart}
@@ -44,8 +52,9 @@ export function CardFruits() {
 
         <CartPic
           price={3.2}
-          name="pineapple"
+          name="Pineapple"
           width="200px"
+          height="320px"
           pic={pineapple}
           onAddToCart={setCart}
           cart={cart}
@@ -53,7 +62,8 @@ export function CardFruits() {
 
         <CartPic
           price={3}
-          name="watermelon"
+          height="320px"
+          name="Watermelon"
           width="200px"
           pic={watermelon}
           onAddToCart={setCart}
@@ -64,7 +74,7 @@ export function CardFruits() {
       <Button variant="success">
         Suma zamówień: {calculateTotalPrice().toFixed(2)} zł
       </Button>
-      <CardData cart={cart} onRemoveProduct={handleRemoveProduct} />
+      <CardData cart={cart} totalPrice={calculateTotalPrice().toFixed(2)} onRemoveProduct={handleRemoveProduct} />
     </>
   );
 }
