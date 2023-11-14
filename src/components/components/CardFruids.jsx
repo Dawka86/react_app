@@ -8,6 +8,7 @@ import pineapple from "./pictures/pineapple.jpg";
 import watermelon from "./pictures/watermelon.jpg";
 import troley from "./pictures/trolley.png";
 import "./cart.css";
+import { CardNavbar } from "./CardNavbar";
 
 export function CardFruits() {
   const [cart, setCart] = useState([]); // Stan koszyka
@@ -29,6 +30,7 @@ export function CardFruits() {
         Say <span>YES</span> to fruit <img src={troley} alt="troley"/>
          ...
       </h1>
+      <CardNavbar/>
       <Row style={{ width: "100%" }}>
         <CartPic
           price={4}
