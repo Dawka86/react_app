@@ -31,7 +31,7 @@ export function CardFruits() {
          ...
       </h1>
       <CardNavbar/>
-      <Row style={{ width: "100%" }}>
+      <Row style={{ width: "100%", padding:"30px" }}>
         <CartPic
           price={4}
           name="Apple"

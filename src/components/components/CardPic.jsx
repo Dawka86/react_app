@@ -47,7 +47,7 @@ export default function CartPic({ price, onAddToCart, cart, pic, name, height })
         src={pic}
         thumbnail
         alt={name}
-        style={{ height: height, width: "300px", padding: "10px", marginTop: "5px" }}
+        style={{ height: height, width: "300px", padding: "5px", marginTop: "10px" }}
       />
       <FormGroup>
         <Card.Title className="title-card">{name}</Card.Title>
